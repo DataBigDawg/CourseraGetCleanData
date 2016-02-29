@@ -99,90 +99,177 @@ The output file consists of 180 observations (30 subjects with 6 activities each
 
 Columns (Variables) in the file are:
     * Subject
+    
     * Activity
+    
     * tBodyAcc-meanX
+    
     * tBodyAcc-meanY
+    
     * tBodyAcc-meanZ
+    
     * tBodyAcc-stdX
+    
     * tBodyAcc-stdY
+    
     * tBodyAcc-stdZ
+    
     * tGravityAcc-meanX
+    
     * tGravityAcc-meanY
+    
     * tGravityAcc-meanZ
+    
     * tGravityAcc-stdX
+    
     * tGravityAcc-stdY
+    
     * tGravityAcc-stdZ
+    
     * tBodyAccJerk-meanX
+    
     * tBodyAccJerk-meanY
+    
     * tBodyAccJerk-meanZ
+    
     * tBodyAccJerk-stdX
+    
     * tBodyAccJerk-stdY
+    
     * tBodyAccJerk-stdZ
+    
     * tBodyGyro-meanX
+    
     * tBodyGyro-meanY
+    
     * tBodyGyro-meanZ
+    
     * tBodyGyro-stdX
+    
     * tBodyGyro-stdY
+    
     * tBodyGyro-stdZ
+    
     * tBodyGyroJerk-meanX
+    
     * tBodyGyroJerk-meanY
+    
     * tBodyGyroJerk-meanZ
+    
     * tBodyGyroJerk-stdX
+    
     * tBodyGyroJerk-stdY
+    
     * tBodyGyroJerk-stdZ
+    
     * tBodyAccMag-mean
+    
     * tBodyAccMag-std
+    
     * tGravityAccMag-mean
+    
     * tGravityAccMag-std
+    
     * tBodyAccJerkMag-mean
+    
     * tBodyAccJerkMag-std
+    
     * tBodyGyroMag-mean
+    
     * tBodyGyroMag-std
+    
     * tBodyGyroJerkMag-mean
+    
     * tBodyGyroJerkMag-std
+    
     * fBodyAcc-meanX
+    
     * fBodyAcc-meanY
+    
     * fBodyAcc-meanZ
+    
     * fBodyAcc-stdX
+    
     * fBodyAcc-stdY
+    
     * fBodyAcc-stdZ
+    
     * fBodyAcc-meanFreqX
+    
     * fBodyAcc-meanFreqY
+    
     * fBodyAcc-meanFreqZ
+    
     * fBodyAccJerk-meanX
+    
     * fBodyAccJerk-meanY
+    
     * fBodyAccJerk-meanZ
+    
     * fBodyAccJerk-stdX
+    
     * fBodyAccJerk-stdY
+    
     * fBodyAccJerk-stdZ
+    
     * fBodyAccJerk-meanFreqX
+    
     * fBodyAccJerk-meanFreqY
+    
     * fBodyAccJerk-meanFreqZ
+    
     * fBodyGyro-meanX
+    
     * fBodyGyro-meanY
+    
     * fBodyGyro-meanZ
+    
     * fBodyGyro-stdX
+    
     * fBodyGyro-stdY
+    
     * fBodyGyro-stdZ
+    
     * fBodyGyro-meanFreqX
+    
     * fBodyGyro-meanFreqY
+    
     * fBodyGyro-meanFreqZ
+    
     * fBodyAccMag-mean
+    
     * fBodyAccMag-std
+    
     * fBodyAccMag-meanFreq
+    
     * fBodyAccJerkMag-mean
+    
     * fBodyAccJerkMag-std
+    
     * fBodyAccJerkMag-meanFreq
+    
     * fBodyGyroMag-mean
+    
     * fBodyGyroMag-std
+    
     * fBodyGyroMag-meanFreq
+    
     * fBodyGyroJerkMag-mean
+    
     * fBodyGyroJerkMag-std
+    
     * fBodyGyroJerkMag-meanFreq
+    
     * angle(tBodyAccMean,gravity)
+    
     * angle(tBodyAccJerkMean),gravityMean)
+    
     * angle(tBodyGyroMean,gravityMean)
+    
     * angle(tBodyGyroJerkMean,gravityMean)
+    
     * angle(X,gravityMean)
+    
     * angle(Y,gravityMean)
+    
     * angle(Z,gravityMean)
