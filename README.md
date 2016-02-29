@@ -18,9 +18,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 
 ## Steps to understand this project
-•	Read the run_analysis_codebook.md file to understand the data
-
-•	Read the run_analysis.r file to understand how the data is manipulated.
+•	Read the CODEBOOK.md file to understand the data and how it is manipulated.
 
 •	Download the data from link above
 
