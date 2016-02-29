@@ -1,5 +1,6 @@
 # CourseraGetCleanData
 Coursera Getting and Cleaning Data Course Project
+
 A 4 week course in Getting and Cleaning Data 
 
  The purpose of this project is to collect, work with and clean a data set.  A script, run_analysis.r, will prepare a tidy data set from the files obtained from this location:
