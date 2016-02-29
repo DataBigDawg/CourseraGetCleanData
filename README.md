@@ -12,7 +12,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 •	run_analysis_output.txt – the tidy dataset output
 
-•	run_analysis_codebook.md – describes the data and the steps takes to create the tidy data set.
+•	CODEBOOK.md – describes the data and the steps takes to create the tidy data set.
 
 •	README.md – this file you are reading.
 
