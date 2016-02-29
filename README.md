@@ -10,7 +10,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## This project contains the following files:
 •	run_analysis.r – a script that will read the necessary files and massage the data to create the tidy data set.
 
-•	run_analysis_output.txt – the tidy dataset output
+•	run_analysis_output.csv – the tidy dataset output
 
 •	CODEBOOK.md – describes the data and the steps takes to create the tidy data set.
 
