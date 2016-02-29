@@ -1,6 +1,6 @@
-# CODEBOOK for Getting and Cleaning Data Coursera Week 4 Assignment
+## CODEBOOK for Getting and Cleaning Data Coursera Week 4 Assignment
  
-## The Analysis process
+### The Analysis process from run_analysis.r script
 
    1. We assume we are in the working directory for the Files we will be using for this exercise.
    
@@ -59,21 +59,21 @@
 	
    9. join the xtest and xtrain data frames using rbind giving 10299 obs. of 563 variables.
 	
-  10. check for any missing values - there were none.
+   10. check for any missing values - there were none.
     
-  11. extract only those columns including the word mean or std anywhere in the column name. 
+   11. extract only those columns including the word mean or std anywhere in the column name. 
     
       a. add back the first two columns for Subject and Activity
 		
-  12. change the names of the numeric values in the Activity column based in the actvty_lbls data frame.
+   12. change the names of the numeric values in the Activity column based in the actvty_lbls data frame.
 	
-  13. clean up any extraneous columns	
+   13. clean up any extraneous columns	
 	
       a. I had to remove the column of numeric values for Activity leaving only the columns of descriptions.
 		
       b. rename the new activity column name to Activity
 		
-  14. change the column names for the measurements to more readable format minimal changes were done for this)
+   14. change the column names for the measurements to more readable format minimal changes were done for this)
     
       a. remove instances of ()-
 		
@@ -83,13 +83,106 @@
 		
       d. I did not change the columns having to do with angle.
 		
-  15. check to make sure after changing the column names that they were unique and I didn't create any duplicates.
+   15. check to make sure after changing the column names that they were unique and I didn't create any duplicates.
     
-  16. groupby Subject and Activity and calculate the mean for each column.
+   16. groupby Subject and Activity and calculate the mean for each column.
     
       a. after much trial and error, I used the aggregate function as follows:
 		
      result <- aggregate(mergedf[,3:88], by=list(Subject=mergedf$Subject, Activity=mergedf$Activity), mean)
 			
-  17. write the result table to a file run_analysis_output.csv to be uploaded to Coursera and github.
+   17. write the result table to a file run_analysis_output.csv to be uploaded to Coursera and github.
 	
+### The Output file
+
+The output file consists of 180 observations (30 subjects with 6 activities each) and 88 variables.  The first two variables are the Subject and Activity and the file is sorted by Subject and Activity. THe other 86 columns are the mean and standard deviation variables taken from the original files and a mean function is applied to them as the data was grouped using the aggregate function.
+
+Columns (Variables) in the file are:
+    * Subject
+    * Activity
+    * tBodyAcc-meanX
+    * tBodyAcc-meanY
+    * tBodyAcc-meanZ
+    * tBodyAcc-stdX
+    * tBodyAcc-stdY
+    * tBodyAcc-stdZ
+    * tGravityAcc-meanX
+    * tGravityAcc-meanY
+    * tGravityAcc-meanZ
+    * tGravityAcc-stdX
+    * tGravityAcc-stdY
+    * tGravityAcc-stdZ
+    * tBodyAccJerk-meanX
+    * tBodyAccJerk-meanY
+    * tBodyAccJerk-meanZ
+    * tBodyAccJerk-stdX
+    * tBodyAccJerk-stdY
+    * tBodyAccJerk-stdZ
+    * tBodyGyro-meanX
+    * tBodyGyro-meanY
+    * tBodyGyro-meanZ
+    * tBodyGyro-stdX
+    * tBodyGyro-stdY
+    * tBodyGyro-stdZ
+    * tBodyGyroJerk-meanX
+    * tBodyGyroJerk-meanY
+    * tBodyGyroJerk-meanZ
+    * tBodyGyroJerk-stdX
+    * tBodyGyroJerk-stdY
+    * tBodyGyroJerk-stdZ
+    * tBodyAccMag-mean
+    * tBodyAccMag-std
+    * tGravityAccMag-mean
+    * tGravityAccMag-std
+    * tBodyAccJerkMag-mean
+    * tBodyAccJerkMag-std
+    * tBodyGyroMag-mean
+    * tBodyGyroMag-std
+    * tBodyGyroJerkMag-mean
+    * tBodyGyroJerkMag-std
+    * fBodyAcc-meanX
+    * fBodyAcc-meanY
+    * fBodyAcc-meanZ
+    * fBodyAcc-stdX
+    * fBodyAcc-stdY
+    * fBodyAcc-stdZ
+    * fBodyAcc-meanFreqX
+    * fBodyAcc-meanFreqY
+    * fBodyAcc-meanFreqZ
+    * fBodyAccJerk-meanX
+    * fBodyAccJerk-meanY
+    * fBodyAccJerk-meanZ
+    * fBodyAccJerk-stdX
+    * fBodyAccJerk-stdY
+    * fBodyAccJerk-stdZ
+    * fBodyAccJerk-meanFreqX
+    * fBodyAccJerk-meanFreqY
+    * fBodyAccJerk-meanFreqZ
+    * fBodyGyro-meanX
+    * fBodyGyro-meanY
+    * fBodyGyro-meanZ
+    * fBodyGyro-stdX
+    * fBodyGyro-stdY
+    * fBodyGyro-stdZ
+    * fBodyGyro-meanFreqX
+    * fBodyGyro-meanFreqY
+    * fBodyGyro-meanFreqZ
+    * fBodyAccMag-mean
+    * fBodyAccMag-std
+    * fBodyAccMag-meanFreq
+    * fBodyAccJerkMag-mean
+    * fBodyAccJerkMag-std
+    * fBodyAccJerkMag-meanFreq
+    * fBodyGyroMag-mean
+    * fBodyGyroMag-std
+    * fBodyGyroMag-meanFreq
+    * fBodyGyroJerkMag-mean
+    * fBodyGyroJerkMag-std
+    * fBodyGyroJerkMag-meanFreq
+    * angle(tBodyAccMean,gravity)
+    * angle(tBodyAccJerkMean),gravityMean)
+    * angle(tBodyGyroMean,gravityMean)
+    * angle(tBodyGyroJerkMean,gravityMean)
+    * angle(X,gravityMean)
+    * angle(Y,gravityMean)
+    * angle(Z,gravityMean)
