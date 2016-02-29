@@ -127,6 +127,9 @@ run_analysis <- function() {
     ## this seems to have worked!
     result <- aggregate(mergedf[,3:88], by=list(Subject=mergedf$Subject, Activity=mergedf$Activity), mean)    
     
+    ## sort the result dataset by Subject, activity
+    result <- result[order(result[,1],result[,2]),]
+    
     ## write the dataset 
     ## write.table(result,file="run_analysis.txt",row.names=FALSE)
     write.csv(result,file="run_analysis_output.csv",row.names=FALSE)
